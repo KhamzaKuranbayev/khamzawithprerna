@@ -1,8 +1,15 @@
-div.main {
+div.main-body {
     display: grid;
+    grid-template-columns: minmax(300px, auto) 1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 20px;
 }
-nav#navbar {
-    grid-area:navbar ;
-    position: fixed;
 
+nav#navbar {
+    grid-area: navbar;
+    position: fixed;
+}
+
+main#main-doc {
+    grid-area: mainContent;
 }
